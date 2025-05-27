@@ -6,7 +6,7 @@ import time
 dac = DAC(Pin(25))
 
 # Frecuencias (en Hz)
-f_c = 5000   # Portadora
+f_c = 5500   # Portadora
 f_m = 50     # Moduladora (usa un valor bajo para ver la envolvente)
 
 # Amplitudes
@@ -39,4 +39,4 @@ while True:
 
     if t >= T_m:
         t = 0
-    #time.sleep_us(int(dt * 1_000_000))
+    time.sleep_us(int(dt * 1_000_000))
